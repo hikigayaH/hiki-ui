@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../dist/assets/entry.f8f82927.css" />
+    <!-- <link rel="stylesheet" href="../../dist/assets/entry.9ef520ab.css" /> -->
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Demo</h1>
+    <div id="app"></div>
+    <script type="module">
+      import { createApp } from 'vue/dist/vue.esm-bundler.js'
+      import SmartyUI, { SFCButton, JSXButton, SButton } from '../../dist/smarty-ui.esm.js'
+      const app = createApp({
+        template: `
+        <div>
+      <SButton color="blue" plain>蓝色按钮</SButton>
+      <SButton color="green" plain>绿色按钮</SButton>
+      <SButton color="gray" plain>灰色按钮</SButton>
+      <SButton color="yellow" plain>黄色按钮</SButton>
+      <SButton color="red" plain>红色按钮</SButton>
+      </div>
+      <div>
+      <SButton size="large" color="blue">蓝色按钮</SButton>
+      <SButton size="large" color="green">绿色按钮</SButton>
+      <SButton size="large" color="gray">灰色按钮</SButton>
+      <SButton size="large" color="yellow">黄色按钮</SButton>
+      <SButton size="large" color="red">红色按钮</SButton>
+      </div>
+      <div>
+      <SButton round size="small" color="blue">蓝色按钮</SButton>
+      <SButton round size="small" color="green">绿色按钮</SButton>
+      <SButton round size="small" color="gray">灰色按钮</SButton>
+      <SButton round size="small" color="yellow">黄色按钮</SButton>
+      <SButton round size="small" color="red">红色按钮</SButton>
+      </div>
+      <div>
+      <SButton plain color="blue"><i class="i-ic-baseline-search p-3"></i>search</SButton>
+      <SButton plain color="green"><i class="i-ic-baseline-search p-3"></i></SButton>
+      <SButton plain color="gray"><i class="i-ic-baseline-search p-3"></i></SButton>
+      <SButton plain color="yellow"><i class="i-ic-baseline-search p-3"></i></SButton>
+      <SButton plain color="red"><i class="i-ic-baseline-search p-3"></i></SButton>
+      </div>
+        `
+      })
+      app.component('SButton', SButton)
+      app.mount('#app')
+    </script>
+  </body>
+</html>
